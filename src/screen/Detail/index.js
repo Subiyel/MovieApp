@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { View, TextInput, SafeAreaView, FlatList, ImageBackground, Alert, ScrollView } from 'react-native';
 import { MyImage, MyBack, MyText, MyButton } from '../../components';
-import { useDetail } from './useDetail';
 import {styles} from './styles';
 import { ApiConstants } from '../../services/ApiConstants';
 import LinearGradient from 'react-native-linear-gradient';
@@ -10,9 +9,6 @@ const Detail = ({ route, navigation }) => {
 
 console.log("route: ", route)
   const movie = route.params.movie;
-
-
-
 
   return (
 
